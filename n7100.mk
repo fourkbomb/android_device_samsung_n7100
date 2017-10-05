@@ -39,6 +39,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     camera.smdk4x12
 
+# Dalvik/HWUI
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+
 # f2fs
 PRODUCT_PACKAGES += \
     fibmap.f2fs \
